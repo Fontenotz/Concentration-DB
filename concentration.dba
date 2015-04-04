@@ -1,0 +1,16 @@
+
+c=100
+d=70
+
+load bitmap "cardback.bmp",2
+get image 2,0,0,64,48
+
+for x=100 to 600 step 50
+for y=50 to 320 step 30 
+sprite x,y,c+x,d+y
+next y
+next x
+
+
+suspend for key
+end
